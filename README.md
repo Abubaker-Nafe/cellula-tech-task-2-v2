@@ -2,6 +2,10 @@
 
 This Streamlit app classifies submitted text, an uploaded image, or both. It uses the LSTM models saved from Task 1. For images, `imagecaption.py` uses BLIP to generate a caption before classification.
 
+## Deployed app
+
+Open the app at [cellula-tech-task-2.streamlit.app](https://cellula-tech-task-2.streamlit.app/). It is deployed on Streamlit Community Cloud from `Abubaker-Nafe/cellula-tech-task-2`, branch `main`, with `app.py` as the entry point.
+
 ## Setup (VS Code on Windows)
 
 Use Python 3.11. Put these files in the same folder:
@@ -29,7 +33,7 @@ python -m pip install -r requirements.txt
 
 The first image run downloads the BLIP model, so it needs an internet connection and enough free disk space. Later runs use the cached download.
 
-## Run the app
+## Run locally
 
 ```bat
 python -m streamlit run app.py --server.fileWatcherType none
@@ -38,6 +42,8 @@ python -m streamlit run app.py --server.fileWatcherType none
 Open the Local URL printed in the terminal (usually `http://localhost:8501`). Enter text, upload a JPG or PNG image, or provide both, then click **Classify**. Open **View saved history** to see previous results. To stop the server, press `Ctrl+C`; restart it after editing the code because file watching is disabled in this command.
 
 Each successful submission is appended to `classification_history.csv` in the same folder. The file is created automatically and stores the input type, submitted text, generated caption, classification, model score, and UTC timestamp.
+
+On Streamlit Community Cloud, [local file storage is not guaranteed to persist](https://docs.streamlit.io/develop/concepts/connections/connecting-to-data), so the deployed app's CSV history may disappear after a restart or redeployment. For permanent shared history, use external persistent storage.
 
 ## Optional command-line checks
 

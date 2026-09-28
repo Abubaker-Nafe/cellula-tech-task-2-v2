@@ -1,0 +1,5 @@
+numpy
+tensorflow
+streamlit
+Pillow
+transformers[torch]

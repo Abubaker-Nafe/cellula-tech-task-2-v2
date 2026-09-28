@@ -1,9 +1,3 @@
-"""Create an image caption with BLIP-1.
-
-Run on its own: python imagecaption.py path/to/image.jpg
-The Streamlit app will import generate_caption from this module later.
-"""
-
 import argparse
 from functools import lru_cache
 from pathlib import Path

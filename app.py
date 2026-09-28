@@ -1,5 +1,3 @@
-"""Streamlit interface for Task 2 content classification."""
-
 import csv
 from datetime import datetime, timezone
 from pathlib import Path

@@ -1,11 +1,3 @@
-"""Load the Task 1 LSTMs and classify text with an optional image.
-
-Extract task2_artifacts.zip into a task2_artifacts/ folder beside this file.
-Run: python Task2_predict_text.py "Your text here"
-Run: python Task2_predict_text.py "Your text here" --caption "An image caption"
-Run: python Task2_predict_text.py "Your text here" --image image.jpg
-"""
-
 import argparse
 import json
 from functools import lru_cache

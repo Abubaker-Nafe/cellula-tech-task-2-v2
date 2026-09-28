@@ -1,0 +1,4 @@
+timestamp_utc,input_type,user_text,image_caption,classification,model_score
+2026-09-28T15:33:17+00:00,text + image,Is it safe to swim here?,ocean waves png,unsafe,0.555
+2026-09-28T15:40:26+00:00,text,I'm going to the prison?,,unsafe,0.643
+2026-09-28T15:41:22+00:00,image,,barbed fence png,Safe,0.350

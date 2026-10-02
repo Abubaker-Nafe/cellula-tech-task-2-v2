@@ -5,7 +5,7 @@ from pathlib import Path
 from PIL import Image
 import streamlit as st
 
-from Task2_predict_text import classify_text, classify_text_with_caption
+from Task2_1_predict_text import classify_text, classify_text_with_caption
 
 
 HISTORY_PATH = Path(__file__).resolve().parent / "classification_history.csv"
@@ -67,7 +67,7 @@ if st.button("Classify", type="primary"):
             st.stop()
 
         st.image(image, caption=uploaded_image.name)
-        from imagecaption import generate_caption
+        from task2_1_imagecaption import generate_caption
 
         with st.spinner("Generating image caption..."):
             caption = generate_caption(image)

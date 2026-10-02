@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import tokenizer_from_json
 
 
-ARTIFACTS = Path(__file__).resolve().parent / "task2_artifacts"
+ARTIFACTS = Path(__file__).resolve().parent / "task2_1_artifacts"
 
 
 @lru_cache(maxsize=2)
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     caption = args.caption
     if args.image is not None:
         from PIL import Image
-        from imagecaption import generate_caption
+        from task2_1_imagecaption import generate_caption
 
         with Image.open(args.image) as image:
             caption = generate_caption(image)

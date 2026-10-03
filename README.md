@@ -4,7 +4,7 @@ This repository keeps the Task 2.0 quantization work separate from the Task 2.1 
 
 ## Deployed app
 
-Open the app at [cellula-tech-task-2.streamlit.app](https://cellula-tech-task-2.streamlit.app/). It is deployed on Streamlit Community Cloud from `Abubaker-Nafe/cellula-tech-task-2`, branch `main`. After this folder reorganization, use `task_2_1_Toxic_content_classification_project/app.py` as the entrypoint file. If an existing deployment still points to the former root-level `app.py`, delete that Streamlit app before applying the repository move, then redeploy it with the new entrypoint path. Streamlit documents this as a change to the app's GitHub coordinates.
+Open the app at [cellula-tech-task-2.streamlit.app](https://cellula-tech-task-2-v2.streamlit.app/). It is deployed on Streamlit Community Cloud from `Abubaker-Nafe/cellula-tech-task-2`, branch `main`. After this folder reorganization, use `task_2_1_Toxic_content_classification_project/app.py` as the entrypoint file. If an existing deployment still points to the former root-level `app.py`, delete that Streamlit app before applying the repository move, then redeploy it with the new entrypoint path. Streamlit documents this as a change to the app's GitHub coordinates.
 
 ## Setup (VS Code on Windows)
 

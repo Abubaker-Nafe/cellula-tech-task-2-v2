@@ -1,11 +1,3 @@
-"""A small post-training INT8 quantization example for Task 2.0.
-
-This quantizes a simulated matrix of model weights; it does not load BERT or
-LLaMA. Run from the project root with:
-python task2_0_research_part/Task2_0_quantization_demo.py
-Requires: numpy and matplotlib.
-"""
-
 from pathlib import Path
 
 import matplotlib

@@ -1,15 +1,3 @@
-"""Compare a real BERT model before and after dynamic INT8 quantization.
-
-Install: python -m pip install "transformers[torch]" matplotlib
-Run:     python task2_0_research_part/Task2_0_quantize_bert.py
-Lighter: python task2_0_research_part/Task2_0_quantize_bert.py --model distilbert/distilbert-base-uncased
-
-The first run downloads the chosen pretrained model. The saved checkpoint
-comparison includes every model tensor, so the reduction will be smaller than
-the theoretical 75% for weights: embeddings and other layers stay in FP32.
-The temporary checkpoints are deleted when the script finishes.
-"""
-
 import argparse
 import tempfile
 from pathlib import Path
